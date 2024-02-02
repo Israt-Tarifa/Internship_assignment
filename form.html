@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="java.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="createform">
+          <fieldset>
+            <h2 class="fs-title">Car Information</h2>
+            <input type="text" id="type" placeholder="Enter car type (Electric/Gas):" />
+            <input type="text" id="name" placeholder="Enter Name:" />
+            <input type="text" id="model" placeholder="Enter model:" />
+            <input type="number" id="int" placeholder="Enter year:" />
+            <input type="number" id="capacity" placeholder="Enter battery capacity (kWh):" />
+
+            <input type="button" id="nextBtn" class="next action-button" value="Next" />
+          </fieldset>
+        </form>
+     <hr>
+
+        <h2>All inserted Car List</h2>
+          <table id="carTable" class="display">
+            <thead>
+                <tr>
+                    <th>Car Type</th>
+                    <th>Name</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Battery Capacity (kWh)</th>
+                    <th>Fuel Efficiency (MPG)</th>
+                </tr>
+            </thead>
+            <tbody id="carTableBody">
+               
+            </tbody>
+          </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
